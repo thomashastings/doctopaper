@@ -1,0 +1,4 @@
+#!/bin/sh
+chmod +x /usr/bin/doctopaper
+update-mime-database /usr/share/mime
+exit 0

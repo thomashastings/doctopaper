@@ -1,0 +1,8 @@
+#!/bin/bash
+INFILEFULL=$1
+INFILE=$(echo "$INFILEFULL" | cut -f 1 -d '.' | tr '/' '\n' | tail -1)
+echo $INFILE
+TEMPFILE=$(mktemp)
+soffice --headless --convert-to "pdf" "$INFILEFULL"
+mv "$INFILE.pdf" $TEMPFILE
+xdg-open $TEMPFILE

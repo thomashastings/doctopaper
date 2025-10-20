@@ -1,0 +1,8 @@
+Package: doctopaper
+Version: 0.0.1
+Section: utility
+Prioiroty: optional
+Architecture: all
+Depends: libreoffice-core
+Maintainer: thomas.hastings@tutanota.com
+Description: A soffice wrapper to open Office documents as PDFs
